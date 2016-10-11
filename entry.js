@@ -1,4 +1,4 @@
 require("./style.css") // 载入 style.css
 document.write('It works.')
 document.write(require('./module.js'))
-require("./module2.js") 
+require.ensure("./module2.js") 
