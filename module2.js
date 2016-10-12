@@ -1,3 +1,2 @@
-define(['jquery'], function($) {
-    $('body').text('hello world');
-});
+console.log("module2");
+module.exports = 2;    
