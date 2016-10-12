@@ -73,7 +73,7 @@
 /******/ 			script.charset = 'utf-8';
 /******/ 			script.async = true;
 
-/******/ 			script.src = __webpack_require__.p + "" + ({"1":"test"}[chunkId]||chunkId) + ".chunk.js";
+/******/ 			script.src = __webpack_require__.p + "" + ({}[chunkId]||chunkId) + ".chunk.js";
 /******/ 			head.appendChild(script);
 /******/ 		}
 /******/ 	};
@@ -97,9 +97,15 @@
 
 	__webpack_require__.e/* nsure */(1, function(require) {
 	    // console.log("aaa");
-	    // var module2 = require("./module2");
-	    // console.log("bbb");
-	    // require("./module1");
+	     //var module2 = require("./module2");
+	    //console.log("bbb");
+	    //require("./module1");
+	    var $ = __webpack_require__(2);
+	    $("body").click(function(){
+		   	 var module2 = __webpack_require__(3);
+			 console.log("bbb");
+	    });
+
 	});
 
 /***/ }
